@@ -47,7 +47,7 @@ os:
   - linux
   - osx
 matrix:
-  - os: linux
+  - os: linux 
     dist: trusty
   exclude:
     - os: osx
