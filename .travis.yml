@@ -47,8 +47,9 @@ os:
   - linux
   - osx
 matrix:
-  - os: linux 
-    dist: trusty
+  include:
+    - os: linux 
+      dist: trusty
   exclude:
     - os: osx
       env: OCAML_VERSION=4.03
