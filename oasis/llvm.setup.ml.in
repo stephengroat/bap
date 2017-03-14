@@ -83,7 +83,7 @@ let () =
     llvm_version;
     llvm_config;
     llvm_mainlib;
-    llvm "cxxflags";
+    llvm_cxxflags;
     llvm "ldflags";
     llvm "cflags";
     llvm "libs";
