@@ -38,25 +38,25 @@ addons:
     - opam
 env:
   global:
-  - OPAMYES=true PACKAGE=bap TESTS=false BAP_RUN_TEST=true BAP_RUN_CHECK=true OPAM_SWITCH=$OCAML_VERSION
+  - FORK_USER=stephengroat FORK_BRANCH=patch-1 OPAMYES=true PACKAGE=bap TESTS=false BAP_RUN_TEST=true BAP_RUN_CHECK=true OPAM_SWITCH=$OCAML_VERSION
   matrix:
   - OCAML_VERSION=4.02
   - OCAML_VERSION=4.03
   - OCAML_VERSION=4.04
 os:
   - linux
-  - osx
+#  - osx
 matrix:
-  include:
-    - os: linux 
-      dist: trusty
-      env: OCAML_VERSION=4.02 UBUNTU_TRUSTY=1
-    - os: linux 
-      dist: trusty
-      env: OCAML_VERSION=4.03 UBUNTU_TRUSTY=1
-    - os: linux 
-      dist: trusty
-      env: OCAML_VERSION=4.04 UBUNTU_TRUSTY=1
+#  include:
+#    - os: linux 
+#      dist: trusty
+#      env: OCAML_VERSION=4.02 UBUNTU_TRUSTY=1
+#    - os: linux 
+#      dist: trusty
+#      env: OCAML_VERSION=4.03 UBUNTU_TRUSTY=1
+#    - os: linux 
+#      dist: trusty
+#      env: OCAML_VERSION=4.04 UBUNTU_TRUSTY=1
   exclude:
     - os: osx
       env: OCAML_VERSION=4.03
