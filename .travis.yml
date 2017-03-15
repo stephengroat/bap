@@ -50,13 +50,13 @@ matrix:
   include:
     - os: linux 
       dist: trusty
-      env: OCAML_VERSION=4.02
+      env: OCAML_VERSION=4.02 UBUNTU_TRUSTY=1
     - os: linux 
       dist: trusty
-      env: OCAML_VERSION=4.03
+      env: OCAML_VERSION=4.03 UBUNTU_TRUSTY=1
     - os: linux 
       dist: trusty
-      env: OCAML_VERSION=4.04
+      env: OCAML_VERSION=4.04 UBUNTU_TRUSTY=1
   exclude:
     - os: osx
       env: OCAML_VERSION=4.03
